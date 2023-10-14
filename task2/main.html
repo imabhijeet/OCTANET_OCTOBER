@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- It includes all the human languag available on this earth-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>To-Do List</h1>
+        <div class="input-container">
+<!-- the below input tag is for the name of the task entered by the users -->
+            <input type="text" id="taskInput" placeholder="Add a task">
+<!-- this input tag is used to assign the date to our task  -->
+            <input type="date" id="taskDate">
+<!-- this select tassk is used for setting the priority of the task based on users preferences -->
+            <select id="taskPriority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+<!-- finally, a button tag which is used to add the task entered by the users -->
+            <button id="addTask">Add</button>
+        </div>
+<!-- here the task will be added with the help of js -->
+        <ul id="taskList"></ul>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
